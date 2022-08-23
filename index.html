@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Best Players</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="text-center my-5">
+        <h1>Choose Your Best players</h1>
+    </header>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-1" class="card-title">Musi</h5>
+                        <button id="player-btn-1" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-2" class="card-title">Riad</h5>
+                        <button id="player-btn-2" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-3" class="card-title">Sakib</h5>
+                        <button id="player-btn-3" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div style="min-height: 200px;" class="card p-3">
+                    <h3 class=" text-center">Selected Players</h3>
+                    <ol id="players-name">
+                        <!-- <li>ami</li>
+                        <li>tumi</li> -->
+
+                    </ol>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-4" class="card-title">Mash</h5>
+                        <button id="player-btn-4" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-5" class="card-title">Tamim</h5>
+                        <button id="player-btn-5" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/download (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="player-6" class="card-title">Miraz</h5>
+                        <button id="player-btn-6" type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3">
+                    <h3 class=" text-center">Budget</h3>
+                    <div class="d-flex justify-content-between">
+                        <span>Per Player</span>
+                        <input id="per-player-cost" class="w-50" type="text">
+                    </div>
+                    <button id="calculate" type="button" class="btn btn-primary my-3">Calculate</button>
+                    <p>Player Expenses $<span id="player-expenses">00</span></p>
+                    <div class="d-flex justify-content-between">
+                        <span>Manager</span>
+                        <input id="manager-cost" class="w-50" type="text">
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between">
+                        <span>Coach</span>
+                        <input id="coach-cost" class="w-50" type="text">
+                    </div>
+                    <button id="calculate-total" type="button" class="btn btn-primary my-3">Calculate Total</button>
+                    <p>Total $<span id="total">00</span></p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="text-center my-5">
+        <hr>
+        <h6>All Rights Reserved &copy; Ankan Halder</h6>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/calculate.js"></script>
+</body>
+
+</html>
