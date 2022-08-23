@@ -7,14 +7,17 @@ function addPlayers(playersBtn, player) {
             let li = document.createElement('li');
             li.appendChild(document.createTextNode(playerName));
             list.appendChild(li);
-            // const button = document.querySelector(playersBtn);
-            // button.setAttribute('disabled', '');
+            const button = document.getElementById(playersBtn);
+
+            // ✅ Set the disabled attribute
+            button.setAttribute('disabled', '');
         }
         else {
             alert('Maximan Players Already Added')
         }
     })
 }
+console.log('borald;lsj')
 addPlayers('player-btn-1', 'player-1')
 addPlayers('player-btn-2', 'player-2')
 addPlayers('player-btn-3', 'player-3')
