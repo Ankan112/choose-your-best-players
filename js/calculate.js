@@ -11,7 +11,7 @@ function addPlayers(playersBtn, player) {
             button.setAttribute('disabled', '');
         }
         else {
-            alert('Maximan Players Already Added')
+            alert('Maximum Players Already Added')
         }
     })
 }
@@ -34,7 +34,6 @@ document.getElementById('calculate').addEventListener('click', function () {
 })
 
 document.getElementById('calculate-total').addEventListener('click', function () {
-    // const playersCost = document.getElementById('player-expenses');
     const playersCostTotal = parseFloat(document.getElementById('player-expenses').innerText);
     let managerCostInput = document.getElementById('manager-cost');
     const managerCostText = managerCostInput.value;
@@ -43,17 +42,13 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const coachCostText = coachCostInput.value;
     let coachCost = parseFloat(coachCostText);
     console.log(isNaN(coachCost))
-    if (isNaN(coachCost) == false || isNaN(managerCost) == false) {
+    if (isNaN(coachCost) == false && isNaN(managerCost) == false) {
         const allCost = playersCostTotal + managerCost + coachCost;
         document.getElementById('total').innerText = allCost;
-
     }
     else {
         alert('Enter a valid Number')
     }
-    // const currentTotalText = total.innerText;
-    // const currentTotal = parseFloat(currentTotalText);
-    // total.innerText = allCost;
     managerCostInput.value = '';
     coachCostInput.value = '';
 })
