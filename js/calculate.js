@@ -42,9 +42,15 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     let coachCostInput = document.getElementById('coach-cost');
     const coachCostText = coachCostInput.value;
     let coachCost = parseFloat(coachCostText);
-    console.log(typeof (coachCost))
-    const allCost = playersCostTotal + managerCost + coachCost;
-    document.getElementById('total').innerText = allCost;
+    console.log(isNaN(coachCost))
+    if (isNaN(coachCost) == false || isNaN(managerCost) == false) {
+        const allCost = playersCostTotal + managerCost + coachCost;
+        document.getElementById('total').innerText = allCost;
+
+    }
+    else {
+        alert('Enter a valid Number')
+    }
     // const currentTotalText = total.innerText;
     // const currentTotal = parseFloat(currentTotalText);
     // total.innerText = allCost;
